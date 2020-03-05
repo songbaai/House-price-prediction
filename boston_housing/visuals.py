@@ -121,7 +121,7 @@ def PredictTrials(X, y, fitter, data):
         reg = fitter(X_train, y_train)
 
         # Make a prediction
-        pred = reg.predict([data[0]])[0]
+        pred = reg.predict(data)
         prices.append(pred)
 
         # Result
